@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "paypal-integration"
+  "defaultProject": "paypal-integration",
+  "cli": {
+    "analytics": "8d97f8ee-d625-488b-b44c-97f16a09bce3"
+  }
 }
