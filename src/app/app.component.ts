@@ -70,6 +70,11 @@ export class AppComponent implements OnInit {
           ]
         })
       },
+      onApprove:(data:any,action:any)=>{
+        return action.order.capture().then(function(details:any) {
+          alert('Transaccion exitosa' + details.payer.name.given_name +' Id de transaccion'+ details.id);
+        });
+      },
       onCancel:(data:any)=>{
         alert('la operacion se cancelo no se realizo ningun cobro');
       }
